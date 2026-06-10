@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abby & Eric | Find Your Seat</title>
+  <style>
+    :root { --gold:#b99352; --ink:#2f2a25; --soft:#fbf8f0; --line:#e7dcc8; }
+    * { box-sizing: border-box; }
+    body { margin:0; min-height:100vh; font-family: Georgia, 'Times New Roman', serif; color:var(--ink); background: radial-gradient(circle at top, #fffaf0 0, var(--soft) 45%, #efe5d4 100%); display:flex; align-items:center; justify-content:center; padding:24px; }
+    .card { width:min(720px, 100%); background:rgba(255,255,255,.88); border:1px solid var(--line); border-radius:28px; padding:34px 26px; box-shadow:0 24px 70px rgba(73,52,22,.14); text-align:center; }
+    .mountain { width:min(360px, 78%); margin:0 auto 10px; display:block; }
+    h1 { margin:0; font-size:clamp(42px, 9vw, 72px); font-weight:400; letter-spacing:.01em; color:var(--gold); }
+    .date { margin:8px 0 24px; font:600 13px/1.5 Arial, sans-serif; letter-spacing:.18em; text-transform:uppercase; color:#6a5a46; }
+    h2 { margin:0 0 12px; font-size:clamp(28px, 7vw, 48px); font-weight:400; color:var(--ink); }
+    .sub { margin:0 auto 22px; max-width:460px; font:16px/1.5 Arial, sans-serif; color:#5c5148; }
+    input { width:100%; max-width:460px; padding:16px 18px; border:1px solid #d9c9ad; border-radius:999px; font:18px Arial, sans-serif; outline:none; text-align:center; background:#fff; }
+    input:focus { border-color:var(--gold); box-shadow:0 0 0 4px rgba(185,147,82,.16); }
+    .result { margin:24px auto 0; max-width:520px; min-height:94px; }
+    .person { border-top:1px solid var(--line); padding:16px 8px; font:18px/1.35 Arial, sans-serif; }
+    .person strong { display:block; font:700 22px/1.25 Arial, sans-serif; color:var(--ink); }
+    .table { display:inline-block; margin-top:8px; padding:8px 16px; border-radius:999px; background:#f3e7c3; color:#4d3a1e; font-weight:700; }
+    .empty, .hint { font:15px/1.45 Arial, sans-serif; color:#766b61; }
+    footer { margin-top:24px; font:12px/1.5 Arial, sans-serif; letter-spacing:.08em; text-transform:uppercase; color:#9b886d; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <svg class="mountain" viewBox="0 0 600 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M32 73 L130 30 L204 64 L282 18 L390 75 L462 38 L568 73" stroke="#b99352" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <h1>Abby &amp; Eric</h1>
+    <div class="date">June 26, 2026 • Young Harris, Georgia</div>
+    <h2>Find Your Seat</h2>
+    <p class="sub">Type your name below to view your seating assignment.</p>
+    <input id="search" type="search" placeholder="Search your name" autocomplete="off" autofocus />
+    <section id="results" class="result"><p class="hint">Start typing your first or last name.</p></section>
+    <footer>Welcome to our forever</footer>
+  </main>
+
+<script>
+const fallbackCsv = `First Name,Last Name,Full Name,Table,Seat,Party / Notes
+Abby,Dominy,Abby Dominy,1,1,Example - replace
+Eric,Hagan,Eric Hagan,1,2,Example - replace
+Jennifer,Hagan,Jennifer Hagan,2,1,Example - replace`;
+let guests = [];
+function parseCSV(text){
+  const rows=[]; let row=[], val='', inQ=false;
+  for(let i=0;i<text.length;i++){
+    const c=text[i], n=text[i+1];
+    if(c==='"' && inQ && n==='"'){ val+='"'; i++; }
+    else if(c==='"'){ inQ=!inQ; }
+    else if(c===',' && !inQ){ row.push(val.trim()); val=''; }
+    else if((c==='\n'||c==='\r') && !inQ){ if(val || row.length){ row.push(val.trim()); rows.push(row); row=[]; val=''; } if(c==='\r'&&n==='\n') i++; }
+    else val+=c;
+  }
+  if(val || row.length){ row.push(val.trim()); rows.push(row); }
+  const header=rows.shift().map(h=>h.toLowerCase());
+  return rows.filter(r=>r.length>1).map(r=>Object.fromEntries(header.map((h,i)=>[h,r[i]||''])));
+}
+function fullName(g){ return (g['full name'] || `${g['first name']||''} ${g['last name']||''}`).trim(); }
+function render(q=''){
+  const box=document.getElementById('results');
+  const query=q.trim().toLowerCase();
+  if(!query){ box.innerHTML='<p class="hint">Start typing your first or last name.</p>'; return; }
+  const matches=guests.filter(g=> fullName(g).toLowerCase().includes(query) || (g['last name']||'').toLowerCase().includes(query)).slice(0,8);
+  if(!matches.length){ box.innerHTML='<p class="empty">No match found. Please check the spelling or ask the seating attendant.</p>'; return; }
+  box.innerHTML = matches.map(g=>`<div class="person"><strong>${fullName(g)}</strong><span class="table">Table ${g.table || ''}${g.seat ? ' • Seat ' + g.seat : ''}</span></div>`).join('');
+}
+async function load(){
+  try { const res = await fetch('guests.csv', {cache:'no-store'}); guests = parseCSV(await res.text()); }
+  catch(e) { guests = parseCSV(fallbackCsv); }
+  document.getElementById('search').addEventListener('input', e=>render(e.target.value));
+}
+load();
+</script>
+</body>
+</html>
