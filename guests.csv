@@ -1,487 +1,55 @@
-First Name	Last Name	Full Name	Table	Seat
-Eric	Hagan, JR	Eric W. Hagan, JR	1	1
-Abigail	Dominy	Abigail Dominy	1	2
-Samantha	Cordle	Samantha Cordle	1	3
-Kevin	Plunkett	Kevin Plunkett	1	4
-William	Bryant	William Bryant	1	5
-Emma	Winstead	Emma Winstead	1	6
-Cameron	Brewer	Cameron Brewer	1	7
-Kayla	Brewer	Kayla Brewer	1	8
-Eric	Hagan, SR	Eric W Hagan, SR	2	1
-Jennifer	Hagan	Jennifer Hagan	2	2
-Kailey	Hagan	Kailey Hagan	2	3
-Michael	Meyer	Michael Meyer	2	4
-Grace	Meyer	Grace Meyer	2	5
-Kent	Stubbs	Kent Stubbs	2	6
-Laura	Stubbs	Laura Stubbs	2	7
-Reginald	Dominy, SR	Reginald Dominy, SR	2	8
-Grant	Stubbs	Grant Stubbs	2	9
-Kenneth	Roof	Kenneth Roof	3	1
-Kathryn	Roof	Kathryn Roof	3	2
-Emma	Roof	Emma Roof	3	3
-Paul	Manos	Paul A Manos	3	4
-Julia	Manos	Julia Manos	3	5
-Brooke	Faulkner	Brooke Faulkner	3	6
-Dwayne	Faulkner	Dwayne Faulkner	3	7
-Anna Kate	Stubbs	Anna Kate Stubbs	4	1
-Ethan	Harb	Ethan Harb	4	2
-Julia	Ely	Julia Ely	4	3
-Matt	Ely	Matt Ely	4	4
-Kylie	Blanton	Kylie Blanton	4	5
-Blake	Fonder	Blake Fonder	4	6
-Hampton	Harbin	Hampton Harbin	4	7
-James	Benton	James Benton	4	8
-Melba	Dominy	Melba Dominy	5	1
-Colleen	Cordle	Colleen Cordle	5	2
-Trey	Cordle	Trey Cordle	5	3
-Susan	Blanton	Susan Blanton	5	4
-Jerry	Blanton	Jerry Blanton	5	5
-Jack	Ducey	Jack Ducey	6	1
-Lorenzo	Cantu	Lorenzo Cantu	6	2
-Campbell	Hillard	Campbell Hillard	6	3
-Andrew	Einbender	Andrew Einbender	6	4
-Danielle	Einbender	Danielle Einbender	6	5
-Peyton	Gray	Peyton Gray	6	6
-Jack	Gray	Jack Gray	6	7
-Hudson	Woods	Hudson Woods	6	8
-Caroline	Woods	Caroline Woods	6	9
-Franklin	Askin	Franklin Askin	7	1
-Lauren	Salter	Lauren Salter	7	2
-Hunter	Matthews	Hunter Matthews	7	3
-Margaret	Matthews	Margaret Matthews	7	4
-Keith	Matthews	Keith Matthews	7	5
-Jennifer	Matthews	Jennifer Matthews	7	6
-Lisa	Bryant	Lisa Bryant	7	7
-Hank	Bryant	Hank Bryant	7	8
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
+First Name,Last Name,Full Name,Table,Seat,Party / Notes
+Eric W.,Hagan Jr.,Eric W. Hagan Jr.,1,1,
+Abigail,Dominy,Abigail Dominy,1,2,
+Samantha,Cordle,Samantha Cordle,1,3,
+Kevin,Plunkett,Kevin Plunkett,1,4,
+William,Bryant,William Bryant,1,5,
+Emma,Winstead,Emma Winstead,1,6,
+Cameron,Brewer,Cameron Brewer,1,7,
+Kayla,Brewer,Kayla Brewer,1,8,
+Eric W.,Hagan Sr.,Eric W Hagan Sr.,2,1,
+Jennifer,Hagan,Jennifer Hagan,2,2,
+Kailey,Hagan,Kailey Hagan,2,3,
+Michael,Meyer,Michael Meyer,2,4,
+Grace,Meyer,Grace Meyer,2,5,
+Kent,Stubbs,Kent Stubbs,2,6,
+Laura,Stubbs,Laura Stubbs,2,7,
+Reginald,Dominy Sr.,Reginald Dominy Sr.,2,8,
+Grant,Stubbs,Grant Stubbs,2,9,
+Kenneth,Roof,Kenneth Roof,3,1,
+Kathryn,Roof,Kathryn Roof,3,2,
+Emma,Roof,Emma Roof,3,3,
+Paul,Manos,Paul A Manos,3,4,
+Julia,Manos,Julia Manos,3,5,
+Brooke,Faulkner,Brooke Faulkner,3,6,
+Dwayne,Faulkner,Dwayne Faulkner,3,7,
+Anna Kate,Stubbs,Anna Kate Stubbs,4,1,
+Ethan,Harb,Ethan Harb,4,2,
+Julia,Ely,Julia Ely,4,3,
+Matt,Ely,Matt Ely,4,4,
+Kylie,Blanton,Kylie Blanton,4,5,
+Blake,Fonder,Blake Fonder,4,6,
+Hampton,Harbin,Hampton Harbin,4,7,
+James,Benton,James Benton,4,8,
+Melba,Dominy,Melba Dominy,5,1,
+Colleen,Cordle,Colleen Cordle,5,2,
+Trey,Cordle,Trey Cordle,5,3,
+Susan,Blanton,Susan Blanton,5,4,
+Jerry,Blanton,Jerry Blanton,5,5,
+Jack,Ducey,Jack Ducey,6,1,
+Lorenzo,Cantu,Lorenzo Cantu,6,2,
+Campbell,Hillard,Campbell Hillard,6,3,
+Andrew,Einbender,Andrew Einbender,6,4,
+Danielle,Einbender,Danielle Einbender,6,5,
+Peyton,Gray,Peyton Gray,6,6,
+Jack,Gray,Jack Gray,6,7,
+Hudson,Woods,Hudson Woods,6,8,
+Caroline,Woods,Caroline Woods,6,9,
+Franklin,Askin,Franklin Askin,7,1,
+Lauren,Salter,Lauren Salter,7,2,
+Hunter,Matthews,Hunter Matthews,7,3,
+Margaret,Matthews,Margaret Matthews,7,4,
+Keith,Matthews,Keith Matthews,7,5,
+Jennifer,Matthews,Jennifer Matthews,7,6,
+Lisa,Bryant,Lisa Bryant,7,7,
+Hank,Bryant,Hank Bryant,7,8,
