@@ -65,8 +65,7 @@ function render(q=''){
   if(!query){ box.innerHTML='<p class="hint">Start typing your first or last name.</p>'; return; }
   const matches=guests.filter(g=> fullName(g).toLowerCase().includes(query) || (g['last name']||'').toLowerCase().includes(query)).slice(0,8);
   if(!matches.length){ box.innerHTML='<p class="empty">No match found. Please check the spelling or ask the seating attendant.</p>'; return; }
-  box.innerHTML = matches.map(g=>`<div class="person"><strong>${fullName(g)}</strong><span class="table">Table ${g.table || ''}${g.seat ? ' • Seat ' + g.seat : ''}</span></div>`).join('');
-}
+  box.innerHTML = matches.map(g=>`<div class="person"><strong>${fullName(g)}</strong><span class="table">Table ${g.table || ''}</span></div>`).join('');
 async function load(){
   try { const res = await fetch('guests.csv', {cache:'no-store'}); guests = parseCSV(await res.text()); }
   catch(e) { guests = parseCSV(fallbackCsv); }
